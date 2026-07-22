@@ -28,7 +28,7 @@ jobs:
 
     # [acoes para verificar regras/políticas] (cobertura de código, formatacao, testes ui/e2e/unit/etc.)
       - name: Iniciando servidor de mock
-        run: npm run mock-server
+        run: npm run mock-server &  #executar em paralelo
 
       - name: Iniciando servidor da aplicacao
         run: npm run server
